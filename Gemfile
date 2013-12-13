@@ -34,6 +34,8 @@ gem "devise", "~> 3.2.2"
 #Easy upload management for ActiveRecord
 gem "paperclip", "~> 3.5.2"
 
+#AWS SDK for Ruby
+gem "aws-sdk", "~> 1.30.0"
 
 group :development, :test do
 	# Use sqlite3 as the database for Active Record
