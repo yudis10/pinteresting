@@ -46,7 +46,7 @@ class PinsController < ApplicationController
     end
 
     def correct_user
-      redirect_to pins_path, notice: "Not authorized to edit this pin" unless user_signed_in? && current_user.pins.find_by(id: params[:id]).nil?
+      redirect_to pins_path, notice: "Not authorized to edit this pin" if !user_signed_in? || current_user.pins.find_by(id: params[:id]).nil?
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
