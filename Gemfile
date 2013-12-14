@@ -41,6 +41,12 @@ gem "aws-sdk", "~> 1.30.0"
 #Masonry JavaScript grid layout library.
 gem "masonry-rails", "~> 0.2.1"
 
+#will_paginate provides a simple API for performing paginated queries with Active Record, DataMapper and Sequel, and includes helpers for rendering pagination links in Rails, Sinatra and Merb web apps.
+gem "will_paginate", "~> 3.0.5"
+
+#This gem integrates the Twitter Bootstrap pagination component with the will_paginate pagination gem. 
+gem "will_paginate-bootstrap", "~> 1.0.0"
+
 group :development, :test do
 	# Use sqlite3 as the database for Active Record
 	gem 'sqlite3'
